@@ -89,11 +89,11 @@ const productSchema = new mongoose.Schema({
             }
         }
     ],
-    user: {
-        type: mongoose.Schema.ObjectId,
-        ref: 'User',
-        required: true
-    },
+    // user: {
+    //     type: mongoose.Schema.ObjectId,
+    //     ref: 'User',
+    //     required: true
+    // },
     createdAt: {
         type: Date,
         default: Date.now
@@ -101,4 +101,3 @@ const productSchema = new mongoose.Schema({
 })
 
 module.exports = mongoose.model('Product', productSchema);
-© 2021 GitHub, Inc.
